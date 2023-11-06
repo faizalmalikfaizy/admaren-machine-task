@@ -1,0 +1,23 @@
+
+<div class="col-md-5">
+    <div class="card">
+        <div class="card-header wd">
+            <h3 class="card-title color">Add Story</h3>
+        </div>
+        <form #myForm="ngForm">
+            <div class="card-body">
+                <div class="form-group form">
+                    <label>Story Name</label><br>
+                    <input type="text" class="input" placeholder="Story Name"
+                        [(ngModel)]="data.story_name" name="name">
+                    <br><br>
+                    <label for="point">Story Point</label><br>
+                    <input type="number" class="input" placeholder="Story point"
+                        [(ngModel)]="data.story_point" name="point">
+                    <br><br>
+                    <button type="submit" (click)="addStory()" class="btn">Add Story</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

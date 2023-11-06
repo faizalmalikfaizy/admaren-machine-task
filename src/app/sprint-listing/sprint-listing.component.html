@@ -1,0 +1,27 @@
+<div class="widget">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header clr size">
+                    <h2 class="card-title hedding">Generated Sprints</h2>
+                    <div class="subhead">
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th class="text_clr">Story Name</th>
+                                    <th class="text_clr">Story Points</th>
+                                </tr>
+                            </thead>
+                            <tbody class="fonts">
+                                <tr *ngFor="let item of generatedSprint">
+                                    <td>{{item.story_name}}</td>
+                                    <td>{{item.story_point}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

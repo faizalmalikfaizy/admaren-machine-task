@@ -1,0 +1,22 @@
+
+<div class="col-md-5">
+    <div class="card">
+        <div class="card-header wd">
+            <h3 class="card-title color">Sprint Calculator</h3>
+        </div>
+        <form>
+            <div class="card-body">
+                <div class="form-group form">
+                    <label for="targetPoints">Sprint Point:</label>
+                    <input class="input" id="targetPoints" type="number" name="sprint" [(ngModel)]="targetPoints"
+                        required>
+                </div>
+                <div class="buttons">
+                    <button class="btn" (click)="autoSelectStories()">Auto Select Stories</button>
+                    <button class="btn" (click)="clearSelectedStories()">Clear Stories</button>
+                    <button class="btn" (click)="clearSelectedSprints()">Clear Selected Sprints</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
